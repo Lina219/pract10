@@ -1,0 +1,22 @@
+﻿<Window x:Class="pract10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract10"
+        mc:Ignorable="d"
+        Title="Коллекции" Height="450" Width="360" ResizeMode="CanMinimize">
+    <Grid Margin="0,-2,0,2">
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Выход" Click="выход_Click"></MenuItem>
+            <MenuItem Header="О программе" Click="справка_Click" ></MenuItem>
+        </Menu>
+        <Button x:Name="рассчитать" Content="Добавить и &#xD;&#xA;рассчитать" HorizontalAlignment="Left" Margin="165,99,0,0" VerticalAlignment="Top" FontSize="16" Click="рассчитать_Click" Width="132" Height="53"/>
+        <TextBox x:Name="элемент" HorizontalAlignment="Left" Margin="165,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" FontSize="16"/>
+        <Button x:Name="очистить" Content="Очистить массив" HorizontalAlignment="Left" Margin="165,164,0,0" VerticalAlignment="Top" FontSize="16" Click="очистить_Click" Width="132"/>
+        <ListBox x:Name="список" Margin="23,36,0,98" HorizontalAlignment="Left" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="165,42,0,0" Text="Введите число:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="вывод" HorizontalAlignment="Left" Margin="23,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" FontSize="16" Height="52" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
